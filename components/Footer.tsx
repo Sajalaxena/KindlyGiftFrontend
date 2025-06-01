@@ -1,8 +1,21 @@
 // components/Footer.tsx
-export default function Footer() {
+const Footer = () => {
   return (
-    <footer className="p-4 text-center text-sm text-gray-500">
-      © {new Date().getFullYear()} KindlyGifts. All rights reserved.
+    <footer style={styles.footer as React.CSSProperties}>
+      <p>© 2025 KindlyGifts. All rights reserved.</p>
     </footer>
   );
-}
+};
+
+const styles = {
+  footer: {
+    textAlign: 'center',
+    padding: '1rem',
+    backgroundColor: '#FFFFFF',
+    borderTop: '1px solid #EDEDED',
+    marginTop: '2rem',
+    color: '#555',
+  },
+};
+
+export default Footer;
